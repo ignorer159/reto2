@@ -1,0 +1,185 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+/*Navegacion y menu con li , a y efectos*/
+#navegacion{
+	width: 100%;
+	background-color: #303030;
+}
+#navegacion ul{
+	list-style: none;
+}
+#menu > li{
+	position: relative;
+	display: inline-block;
+}
+#menu > li > a{
+	display: block;
+	padding: 15px 60px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+} 
+#menu li a:hover{
+	display: block;
+	background-color: black;
+	border-bottom: 3px solid #EB984E;
+	transition: all .5s;
+}
+/*Navegacion del submenu con li y a*/
+#submenu{
+	position: absolute;
+	background-color: #303030;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s;
+}
+#submenu li a {
+	display: block;
+	padding: 15px;
+	color: white;
+	text-decoration: none;
+}
+#menu li:hover > #submenu{
+	visibility: visible;
+	opacity: 1;
+}
+/*Contenido principal con decoracion de la tabla*/
+#contenido {
+	margin-top: 100px;
+	margin-left: 30px;
+	width: 55%;
+	font-size: 17px;
+	float: left;
+	margin-bottom: 40px;
+}
+#contenido p {
+	padding: 20px 10px 15px 0px;
+}
+/*Tabla del articulo con estilos*/
+#tablaarticulo{
+	background-color: #F39A4A;
+	margin: 10px auto;
+	border-collapse: collapse;
+}
+#tabla1-1 th{
+	width: 50%;
+	padding: 10px;
+	background-color: #CB6000;
+	color: white;
+	border-bottom: 4px solid #894100;
+	font-size: 20px;
+}
+#tabla1-2 td {
+	padding: 10px;
+}
+#tabla1-2 tr:nth-child(even){
+	background-color: #FFAF67;
+}
+/*siguenos y sus fotos con estilo para separar*/
+#siguenos li {
+	list-style: none;
+}
+#siguenos p {
+	padding: 20px 10px 15px 0px;
+}
+#siguenos a {
+	padding: 20px 10px 10px 0px;
+}
+h3 {
+	float: right;
+	width: 400px;
+	margin-top: 100px;
+	margin-right: 20px;   
+}
+/*recomendados e imagenes*/
+#recomendados li {
+	width: 400px;
+	height: 120px;
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	box-sizing: border-box;
+	box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+	display: flex;
+}
+#recomendados a {
+	width: 400px;
+	height: 120px;
+	float: right;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	box-sizing: border-box;
+	display: flex;
+	color: black;
+	text-decoration: none;
+}
+#recomendados a:hover {
+	color: #FF7800;
+	transition: 0.5s;
+}
+#recomendados img {
+	padding-right: 20px;
+}
+/*escribenos y sus inputs*/
+#escribenos {
+	margin-top: 40px;
+	margin-right: 20px;
+	width: 400px;
+	padding: 20px;
+	float: right;
+	background-color: #f2f2f2;
+}
+input[type=text],textarea {
+	width: 100%;
+	height: 35px;
+	border:none;
+}
+input[type=submit]{
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 16px;
+	margin: 10px 140px;
+	text-decoration: none;
+	border:none;
+	border-radius: 4px;
+}
+/*footer y logo con lo demás*/
+footer {
+	background-color: #161718;
+	clear: both;
+	padding: 10px;
+}
+/*subir y su efecto bonito*/
+#subir {
+	float: right;
+	background-color: #444;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-decoration: none;
+	transition: .5s;
+}
+#subir:hover{
+	background-color: black;
+}
+#tablafooter {
+	padding-top: 30px;
+	border-top: 1px solid #444;
+	width: 100%;
+	text-align: left;
+}
+#tabla2-1 th{
+	padding-left: 17px;
+	color: white;
+}
+#tabla2-2 td{
+	padding: 10px;
+	color: #616569;
+}
